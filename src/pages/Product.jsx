@@ -7,7 +7,6 @@ import Announcement from '../components/Announcement';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import { Add, Remove } from '@mui/icons-material';
-import { style } from '@mui/system';
 
 const Container = styled.div``;
 

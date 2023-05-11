@@ -1,13 +1,9 @@
 /** @format */
-import dress from './assets/dress.png';
-import frock from './assets/frock for girls.png';
-import jacket from './assets/Jacket.png';
-import tshirt from './assets/Tshirt.png';
 
 export const sliderItems = [
   {
     id: 1,
-    img: dress,
+    img: 'https://i.ibb.co/qn1SG1B/dress.png',
     title: 'SUMMER SALE',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
     bg: 'f5fafd',
@@ -53,7 +49,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: tshirt,
+    img: 'https://i.ibb.co/p1C0LJG/Tshirt.png',
   },
   {
     id: 3,
@@ -61,7 +57,7 @@ export const popularProducts = [
   },
   {
     id: 4,
-    img: frock,
+    img: 'https://i.ibb.co/W571Q05/frock-for-girls.png',
   },
   {
     id: 5,
@@ -73,7 +69,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: jacket,
+    img: 'https://i.ibb.co/wLzFKdZ/Jacket.png',
   },
   {
     id: 8,
