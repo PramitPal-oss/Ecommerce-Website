@@ -23,6 +23,7 @@ const Left = styled.div`
 
 const Desc = styled.p`
   margin: 20px 0px;
+  text-transform: uppercase;
 `;
 
 const Logo = styled.h1``;
@@ -85,7 +86,7 @@ function Footer() {
   return (
     <Container>
       <Left>
-        <Logo>Pramit</Logo>
+        <Logo>Pramji.</Logo>
         <Desc>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected

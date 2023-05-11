@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import dressImage from '../assets/dress.png';
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { sliderItems } from '../data';

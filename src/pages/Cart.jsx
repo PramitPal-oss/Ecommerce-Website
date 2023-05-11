@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 import Announcement from '../components/Announcement';
 import Footer from '../components/Footer';
+import { Add, Remove } from '@mui/icons-material';
 
 const Container = styled.div``;
 
@@ -56,21 +57,69 @@ const TopText = styled.span`
   margin: 0px 10px;
 `;
 
-const Product = styled.div``;
+const Product = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
-const ProductDetails = styled.div``;
+const ProductDetails = styled.div`
+  flex: 2;
+  display: flex;
+`;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 200px;
+`;
 
-const Details = styled.div``;
+const Details = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
 
-const ProductName = styled.div``;
+const ProductName = styled.span``;
 
-const ProductId = styled.div``;
+const ProductId = styled.span``;
 
-const ProductSize = styled.div``;
+const ProductSize = styled.span``;
 
-const PriceDetail = styled.div``;
+const ProductColor = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+`;
+
+const PriceDetail = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+const ProductAmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+const ProductAmount = styled.div`
+  font-size: 24px;
+  margin: 5px;
+`;
+
+const ProductPrice = styled.div`
+  font-size: 30px;
+  font-weight: 300;
+`;
+
+const Hr = styled.hr`
+  background-color: #eee;
+  border: none;
+  height: 1px;
+`;
 
 function Cart() {
   return (
@@ -99,12 +148,46 @@ function Cart() {
                   <ProductId>
                     <b>ID:</b> 9387456612
                   </ProductId>
+                  <ProductColor color='black' />
                   <ProductSize>
                     <b>Size:</b> 37.5
                   </ProductSize>
                 </Details>
               </ProductDetails>
-              <PriceDetail>price</PriceDetail>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>2</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice>₹ 30</ProductPrice>
+              </PriceDetail>
+            </Product>
+            <Hr />
+            <Product>
+              <ProductDetails>
+                <Image src='https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png' />
+                <Details>
+                  <ProductName>
+                    <b>Product:</b> HAKURA T-SHIRT
+                  </ProductName>
+                  <ProductId>
+                    <b>ID:</b> 93813718293
+                  </ProductId>
+                  <ProductColor color='black' />
+                  <ProductSize>
+                    <b>Size:</b> 38.5
+                  </ProductSize>
+                </Details>
+              </ProductDetails>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>2</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice>₹ 20</ProductPrice>
+              </PriceDetail>
             </Product>
           </Info>
           <Summary>Summary</Summary>
